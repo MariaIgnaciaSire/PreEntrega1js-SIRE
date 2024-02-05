@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Cabañas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reserva de Cabañas</h1>
+        <p>Selecciona el tipo de cabaña que te gustaría arrendar:</p>
+        <select id="tipoCabaña">
+            <option value="pequeña">Pequeña (2 personas)</option>
+            <option value="mediana">Mediana (4 personas)</option>
+            <option value="grande">Grande (6 personas)</option>
+        </select>
+        <p>Selecciona la duración de la estadía (en días):</p>
+        <input type="number" id="duracionEstadia" min="1" value="1">
+        <p>Selecciona el tipo de cambio:</p>
+        <select id="tipoCambio">
+            <option value="pesos">Pesos Chilenos</option>
+            <option value="dolares">Dólares</option>
+            <option value="euros">Euros</option>
+        </select>
+        <button id="calcularPrecio">Calcular Precio</button>
+        <div id="precioReserva"></div>
+    </div>
+
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
+
+
+
