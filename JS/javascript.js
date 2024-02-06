@@ -34,6 +34,13 @@ function obtenerPrecioPorDia(tipoCabaña) {
 function calcularPrecioTotal(precioPorDia, duracionEstadia) {
     let precioTotal = precioPorDia * duracionEstadia;
     return precioTotal;
+
+    document.getElementById('calcularPrecio').addEventListener('click', function() {
+        console.log("Botón 'Calcular Precio' clickeado"); // Verifica si el botón se ha clickeado
+    
+        // Resto del código para calcular el precio y mostrarlo
+    });
+    
 }
 
 function convertirPrecio(precio, tipoCambio) {
@@ -50,9 +57,10 @@ function convertirPrecio(precio, tipoCambio) {
 }
 
 function mostrarPrecioReserva(precioTotal, tipoCambio) {
+    console.log('Mostrando precio de reserva');
     let precioReservaElement = document.getElementById('precioReserva');
 
-    // Definimos el símbolo de la moneda según el tipo de cambio
+    // Definimos el símbolo de la moneda según el tipo de cambio seleccionado
     let simboloMoneda = '';
     switch (tipoCambio) {
         case 'pesos':
@@ -75,6 +83,7 @@ function mostrarPrecioReserva(precioTotal, tipoCambio) {
 
     precioReservaElement.innerText = 'El precio total de la reserva es: ' + precioFormateado;
 }
+
 
 
 
